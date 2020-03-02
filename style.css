@@ -27,8 +27,8 @@ html {
 }
 
 body {
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -86,6 +86,7 @@ button {
 }
 
 /* Heading Text */
+
 h2,
 h3 {
     font-size: 4.9rem;
@@ -138,9 +139,11 @@ address {
 /* Start of the header */
 
 header {
-    min-height: 100vh;
+    height: 750px;
     background-image: url(./assets/image-1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fcfcfc;
     text-transform: uppercase;
 }
@@ -178,9 +181,10 @@ header {
 
 }
 
-.heading {
+.heading h1 {
     text-align: center;
     padding-top: 150px;
+    display: block;
 }
 
 .heading span {
@@ -335,7 +339,7 @@ header {
 }
 
 .icons-list li {
-    float: left;
+    float: right;
     width: 33.3%;
     display: block;
     padding: 100px 30px;
@@ -403,8 +407,6 @@ button {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-
-
 
 /* This is the footer */
 
@@ -515,7 +517,6 @@ h3 {
 .icons-list li {
     float: none;
     width: 100%;
-    display: block;
     text-align: center;
     padding: 50px 0;
 }
@@ -550,17 +551,15 @@ input[type="email"] {
     width: calc(80% - 150px);
     margin-left: 10%;
 }
-
-@media (max-width: 900px) {
-
-.heading {
-    padding-top: 200px;
 }
 
+@media (max-width: 900px) {
 /* Changing Nav to be hamburger menu */
-.topList,
+
+.primary-nav,
 .logo p {
-    display: none;
+    height: 0;
+    overflow: hidden;
 }
 
 .top-menu {
@@ -598,11 +597,12 @@ button {
 
 @media (max-width: 775px) {
 .social-list {
-    visibility: hidden;
+    height: 0;
+    overflow: hidden;
 }
 
 .heading {
-    padding-top: 275px;
+    padding-top: 150px;
 }
 
 .heading h1 {
@@ -610,7 +610,7 @@ button {
 }
 
 .heading span {
-    font-size: 13rem;
+    font-size: 12rem;
 }
 
 button {
@@ -620,5 +620,95 @@ button {
 }
 
 @media (max-width: 590px) {
+/* Re-sizing fonts and padding for mobile */
+header {
+    height: 580px;
+}
+
+.heading h1 {
+    font-size: 5.5rem;
+}
+
+.heading span {
+    font-size: 7.5rem;
+}
+
+.heading {
+    padding-top: 100px;
+}
+
+h2,
+h3 {
+    font-size: 3rem;
+}
+
+.news-section h2 {
+    padding: 35px 0;
+}
+
+.highlight-section {
+    padding: 50px 0;
+}
+
+.highlight-image img {
+    padding-bottom: 50px;
+}
+
+.highlight-text p {
+    text-align: left;
+}
+
+.trend-text h3,
+.bts-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.icons-list li {
+    padding: 30px 0;
+}
+
+.icons-list h4 {
+    font-size: 2.5rem;
+}
+
+.contact-form {
+    padding: 50px 0;
+}
+
+.contact-form p,
+.contact-form address,
+.contact-form a {
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.second-column {
+    width: 70%;
+}
+
+.third-column {
+    float: left;
+    width: 10%;
+}
+}
+
+@media (max-width: 340px) {
+
+h5 {
+    font-size: 1.8rem;
+}
+
+.contact-form p,
+.contact-form address,
+.contact-form a {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+footer p {
+    font-size: 1.6rem;
+}
+
 
 }

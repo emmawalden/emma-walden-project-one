@@ -356,7 +356,7 @@ header {
     padding-bottom: 20px;
 }
 
-/* This is the start of the contact section */
+/* Start of the contact section */
 
 .contact-form {
     background-color: #E3E3E3;
@@ -609,10 +609,13 @@ button {
 }
 
 @media (max-width: 775px) {
+/* Removing the social list links */
 .social-list {
     height: 0;
     overflow: hidden;
 }
+
+/* Further reducing font sizes and padding */
 
 .heading {
     padding-top: 150px;
@@ -641,10 +644,12 @@ button {
 }
 
 @media (max-width: 590px) {
-/* Re-sizing fonts and padding for mobile */
+/* Reducing header height */
 header {
     height: 580px;
 }
+
+/* Re-sizing fonts and padding for mobile */
 
 .heading h1 {
     font-size: 5.5rem;
